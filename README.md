@@ -51,9 +51,16 @@
 <p align="justify">Hemos avanzado mucho desde que iniciamos, ahora nuestra proxima tarea sera subir nuestro repositorio a la plataforma GitHub para poder compartirlo con las demas personas y poder trabajar en colaboracion con otros desarrolladores.</p>
 <p align="justify">Bien, ahora debemos seguir una serie de pasos muy sencillos para lograrlo, te los enlisto a continuación:</p>
 <ol>
-<li>Dibujamos las figuras con el lÃ¡piz.</li>
-<li>Usando las tijeras iremos recortando las figuras cuidadosamente.</li>
-<li>Por Ãºltimo, pegaremos cada parte por las partes indicadas.</li>
+<li><strong>Crear un repositorio en GitHub:</strong> Ve a la página principal de GitHub, inicia sesión en tu cuenta y haz clic en el botón "New" (Nuevo) en la esquina superior derecha para crear un nuevo repositorio. Dale un nombre al repositorio, elige si será público o privado, y opcionalmente agrega una descripción. Luego, haz clic en "Create repository" (Crear repositorio).</li>
+<li><strong>Inicializar un repositorio local:</strong> Si aún no tienes un repositorio local para tu proyecto, inicializa uno en tu máquina local. Abre una terminal o línea de comandos, navega hasta el directorio donde tienes tu proyecto y ejecuta el 	siguiente comando para inicializar un nuevo repositorio Git:<br>
+<code>git init</code></li>
+<li><strong>Agregar archivos al repositorio local:</strong> Agrega los archivos y carpetas de tu proyecto al repositorio local usando el comando git add. Por ejemplo, para agregar todos los archivos y carpetas, puedes usar:<br>
+<code>git add .</code></li>
+<li><strong>Confirmar los cambios:</strong> Después de agregar los archivos, realiza un commit para confirmar los cambios en el repositorio local. Puedes hacerlo con el siguiente comando:<br>
+<code>git commit -m "Mensaje de commit descriptivo"</code></li>
+<li><strong>Conectar tu repositorio local a GitHub:</strong>En la página de tu repositorio en GitHub, copia la URL del repositorio remoto. Luego, en tu terminal, ejecuta el siguiente comando para agregar el repositorio remoto:<br>
+<code>git remote add origin URL_DEL_REPOSITORIO_GITHUB</code></li>
+  
 </ol> 
 
 
