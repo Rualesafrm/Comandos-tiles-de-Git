@@ -59,7 +59,16 @@
 <li><strong>Confirmar los cambios:</strong> Después de agregar los archivos, realiza un commit para confirmar los cambios en el repositorio local. Puedes hacerlo con el siguiente comando:<br>
 <code>git commit -m "Mensaje de commit descriptivo"</code></li>
 <li><strong>Conectar tu repositorio local a GitHub:</strong>En la página de tu repositorio en GitHub, copia la URL del repositorio remoto. Luego, en tu terminal, ejecuta el siguiente comando para agregar el repositorio remoto:<br>
-<code>git remote add origin URL_DEL_REPOSITORIO_GITHUB</code></li>
+<code>git remote add origin URL_DEL_REPOSITORIO_GITHUB</code><br><br>Reemplaza URL_DEL_REPOSITORIO_GITHUB con la URL que copiaste de GitHub.<br><br>
+<strong>Nota:<br></strong>
+Si ingresas mal el link o necesitas simplemente cambiarlo haces lo siguiente:<br><br>
+<strong>Verificar la URL remota actual:</strong> Puedes verificar la URL remota actual ejecutando el siguiente comando en Git Bash:<br>
+<code>git remote -v</code><br><br>
+<strong>Cambiar el link:</strong><br>
+<code>git remote set-url origin nueva_url</code><br><br>
+<strong>Volver a verificar el link:</strong><br>
+<code>git remote -v</code></li>
+<li><strong>Subir los cambios al repositorio remoto:</strong> Una vez que hayas conectado tu repositorio local a GitHub, puedes subir los cambios al repositorio remoto ejecutando el siguiente comando:</li>
   
 </ol> 
 
