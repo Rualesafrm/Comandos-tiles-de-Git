@@ -27,16 +27,24 @@
 <p>Luego de que ya estas dentro de Disco Local D: y sabes que tu carpeta llamada "Desarrollo Web" esta ahi, haces lo siguiente:</p>
 <p><strong>cd "Desarrollo Web"</strong></p>
 <p>Bingo 👌, estas dentro de tu carpeta lista para ser nuestro nuevo repositorio.</p>
-<p>Antes que nada quiero que conozcas los comandos básicos para poder crear tu repositorio, los listare a continuación:</p>
+<p>Ahora para poder crear nuestro repositorio debemos segir los siguientes pasos:</p>
 <ul>
   <li><strong>git init : </strong> Inicializa un repositorio de GIT en la carpeta donde se ejecute el comando.</li>
   <li><strong>git add nombrearchivo.extension (o tambien se puede colocar un punto(.) en vez del nombrearchivo para que se actualice todos los archivos en la carpeta) : </strong> Añade los archivos especificados al área de preparación (staging).</li>
-  <li><strong>git commit -m “commit description” : </strong> Confirma los archivos que se encuentran en el área de preparación y los agrega al repositorio.</li>
-  <li><strong>git commit -am “commit description” : </strong> Añade al staging area y hace un commit mediante un solo comando. (No funciona con archivos nuevos)</li>
-  <li><strong>git status : </strong> Ofrece una descripción del estado de los archivos (untracked, ready to commit, nothing to commit).</li>
-  <li><strong>git rm (. -r, filename) (–cached) : </strong> Remueve los archivos del index.</li>
   <li><strong>git config --global user.email tu@email.com : </strong> Configura un email.</li>
   <li><strong>git config --global user.name : </strong> Configura un nombre.</li>
+  <li><strong>git commit -m “commit description” : </strong> Confirma los archivos que se encuentran en el área de preparación y los agrega al repositorio.</li>
+  <li><strong>git status : </strong> Ofrece una descripción del estado de los archivos (untracked, ready to commit, nothing to commit).</li>
+</ul>
+<p>Este par de lineas de comando solo se usaran la primera vez que creamos desde cero nuestro repositorio, ya que nos ayudara a identificar y controlar quien ha hecho los cambios:</p>
+<ul>
+  <li><strong>git config --global user.email tu@email.com : </strong> Configura un email.</li>
+  <li><strong>git config --global user.name : </strong> Configura un nombre.</li>
+</ul>
+<p>Estas otras lineas de comando son opcionales ya que nos serviran si necesitamos hacer alguna modificación:</p>
+<ul>
+  <li><strong>git commit -am “commit description” : </strong> Añade al staging area y hace un commit mediante un solo comando. (No funciona con archivos nuevos)</li>
+  <li><strong>git rm (. -r, filename) (–cached) : </strong> Remueve los archivos del index.</li>
   <li><strong>git config --list : </strong> Lista las configuraciones.</li>
 </ul>
 
