@@ -16,18 +16,18 @@
   <li><strong>pwd : </strong>Muestra la ruta del directorio actual.</li>
   <li><strong>clear : </strong>Limpia la pantalla del terminal o la ventana de la consola.(Si por alguna razon no te sirve y estas en Windows usa ctrl + L)</li>
 </ul>
-<p>⚠️Quiero dejarte algo claro, hay muchos mas comandos con muchas mas utilidades pero para iniciar, creeme esto son los mas importantes que vas a necesitar mientras vas aprendiendo⚠️.</p>
+<p align="justify">⚠️Quiero dejarte algo claro, hay muchos mas comandos con muchas mas utilidades pero para iniciar, creeme esto son los mas importantes que vas a necesitar mientras vas aprendiendo⚠️.</p>
 <h2 align="center"> Ahora que ya aprendiste lo básico, vamos a crear nuestro repositorio desde cero</h2>
-<p>Ten en cuenta algo importante y es que para poder iniciar con esta serie de comandos primero debes haber establecido mediante tu consola de comandos o tu Git Bash la ubicación de tu carpeta donde vas a crear tu repositorio. Recuerda que eso lo haces con los comandos que vimos al inicio de esta guía.</p>
-<p>Si tienes dudas de como hacerlo simplemente abre tu consola de comandos o tu Git Bash que debe estar previamente instalado y coloca el siguiente comando:</p>
-<p><strong>cd D:\repositorio</strong></p>
-<p>En este ejemplo estamos accediendo al Disco Local D: y estamos entrando en una carpeta que ya existe llamada "repositorio". Habran casos donde las carpetas tendran nombres con espacio u otro tipo de caracteres, notaras que al ejecutar este mismo comando pero usando solo la dirección de la carpeta no bastara, ya que obtendras un error. Para poder dar solucion basta con agregar comillas dobles al nombre de la carpeta("nombrecarpeta"). Es decir si mi carpeta se llama "repositorio JS" o "Desarrollo Web" deberas hacer lo siguiente:</p>
-<p>Primero para no complicarte y liberarte de errores entra al Disco Local D:, eso lo hacemos de la siguiente manera:</p>
+<p align="justify">Ten en cuenta algo importante y es que para poder iniciar con esta serie de comandos primero debes haber establecido mediante tu consola de comandos o tu Git Bash la ubicación de tu carpeta donde vas a crear tu repositorio. Recuerda que eso lo haces con los comandos que vimos al inicio de esta guía.</p>
+<p align="justify">Si tienes dudas de como hacerlo, simplemente abre tu consola de comandos o tu Git Bash que debe estar previamente instalado y coloca el siguiente comando:</p>
+<p align="justify"><strong>cd D:\repositorio</strong></p>
+<p align="justify">En este ejemplo estamos accediendo al Disco Local D: y estamos entrando en una carpeta que ya existe llamada "repositorio". Habran casos donde las carpetas tendran nombres con espacio u otro tipo de caracteres, notaras que al ejecutar este mismo comando pero usando solo la dirección de la carpeta no bastara, ya que obtendras un error. Para poder dar solucion basta con agregar comillas dobles al nombre de la carpeta("nombrecarpeta"). Es decir si mi carpeta se llama "repositorio JS" o "Desarrollo Web" deberas hacer lo siguiente:</p>
+<p align="justify">Primero para no complicarte y liberarte de errores entra al Disco Local D:, eso lo hacemos de la siguiente manera:</p>
 <p><strong>cd D:\</strong></p>
-<p>Luego de que ya estas dentro de Disco Local D: y sabes que tu carpeta llamada "Desarrollo Web" esta ahi, haces lo siguiente:</p>
+<palign="justify">Luego de que ya estas dentro de Disco Local D: y sabes que tu carpeta llamada "Desarrollo Web" esta ahi, haces lo siguiente:</p>
 <p><strong>cd "Desarrollo Web"</strong></p>
-<p>Bingo 👌, estas dentro de tu carpeta lista para ser nuestro nuevo repositorio.</p>
-<p>Ahora para poder crear nuestro repositorio debemos segir los siguientes pasos:</p>
+<p align="justify">Bingo 👌, estas dentro de tu carpeta lista para ser nuestro nuevo repositorio.</p>
+<p align="justify">Ahora para poder crear nuestro repositorio debemos segir los siguientes pasos:</p>
 <ul>
   <li><strong>git init : </strong> Inicializa un repositorio de GIT en la carpeta donde se ejecute el comando.</li>
   <li><strong>git add nombrearchivo.extension (o tambien se puede colocar un punto(.) en vez del nombrearchivo para que se actualice todos los archivos en la carpeta) : </strong> Añade los archivos especificados al área de preparación (staging).</li>
@@ -36,17 +36,25 @@
   <li><strong>git commit -m “commit description” : </strong> Confirma los archivos que se encuentran en el área de preparación y los agrega al repositorio.</li>
   <li><strong>git status : </strong> Ofrece una descripción del estado de los archivos (untracked, ready to commit, nothing to commit).</li>
 </ul>
-<p>Este par de lineas de comando solo se usaran la primera vez que creamos desde cero nuestro repositorio, ya que nos ayudara a identificar y controlar quien ha hecho los cambios:</p>
+<p align="justify">Este par de lineas de comando solo se usaran la primera vez que creamos desde cero nuestro repositorio, ya que nos ayudara a identificar y controlar quien ha hecho los cambios:</p>
 <ul>
   <li><strong>git config --global user.email tu@email.com : </strong> Configura un email.</li>
   <li><strong>git config --global user.name : </strong> Configura un nombre.</li>
 </ul>
-<p>Estas otras lineas de comando son opcionales ya que nos serviran si necesitamos hacer alguna modificación:</p>
+<p align="justify">Estas otras lineas de comando son opcionales ya que nos serviran si necesitamos hacer alguna modificación:</p>
 <ul>
   <li><strong>git commit -am “commit description” : </strong> Añade al staging area y hace un commit mediante un solo comando. (No funciona con archivos nuevos)</li>
   <li><strong>git rm (. -r, filename) (–cached) : </strong> Remueve los archivos del index.</li>
   <li><strong>git config --list : </strong> Lista las configuraciones.</li>
 </ul>
+<h2 align="center"> Excelente, nuestro siguiente objetivo es subir nuestro repositorio a GitHub</h2>
+<p align="justify">Hemos avanzado mucho desde que iniciamos, ahora nuestra proxima tarea sera subir nuestro repositorio a la plataforma GitHub para poder compartirlo con las demas personas y poder trabajar en colaboracion con otros desarrolladores.</p>
+<p align="justify">Bien, ahora debemos seguir una serie de pasos muy sencillos para lograrlo, te los enlisto a continuación:</p>
+<ol>
+<li>Dibujamos las figuras con el lÃ¡piz.</li>
+<li>Usando las tijeras iremos recortando las figuras cuidadosamente.</li>
+<li>Por Ãºltimo, pegaremos cada parte por las partes indicadas.</li>
+</ol> 
 
 
 
