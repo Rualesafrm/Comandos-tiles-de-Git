@@ -111,6 +111,30 @@ Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epi
 <h2>¿Que son las ramas en git?</h2>
 <p align="justify">Las ramas en Git son líneas independientes de desarrollo que te permiten trabajar en diferentes características de tu proyecto de forma aislada. Cada rama tiene su propio conjunto de commits y cambios, lo que facilita la colaboración y la implementación de nuevas características sin interferir con el código principal.</p>
 <p align="justify">En palabras mas sencillas al crear una nueva rama se copia el último commit en esta nueva rama. Todos los cambios hechos en esta rama no se reflejarán en la rama master hasta que hagamos un merge.</p>
+<h2>¿Por que usar ramas?</h2>
+<ul>
+  <li><strong>Desarrollo paralelo: </strong>Las ramas te permiten trabajar en diferentes funcionalidades o correcciones de errores de forma simultánea sin afectar el código en otras ramas.</li>
+  <li><strong>Experimentación segura: </strong>Puedes probar nuevas ideas o implementaciones en una rama separada sin afectar la estabilidad del código principal.</li>
+  <li><strong>Colaboración:  </strong>Facilita la colaboración en equipo al permitir que múltiples desarrolladores trabajen en diferentes partes del proyecto al mismo tiempo.</li>
+</ul>
+<h2>Uso básico de ramas en Git</h2>
+<p>Quiero mostrarte una guia de como puedes gestionar tus ramas en tus repositorios. Asi que empecemos:</p>
+<ol>
+  <li><strong>Crear una nueva rama: </strong><br><code>git branch nombre_de_la_rama</code><br><br>Esto crea una nueva rama con el nombre especificado pero no cambia a esa rama.</li>
+  <li><strong>Cambiar a una rama existente o la que acabamos de crear: </strong><br><code>git checkout nombre_de_la_rama</code><br><br>Esto cambia tu directorio de trabajo y tu HEAD a la rama especificada, permitiéndote trabajar en esa rama.<br><br>
+  Otra forma de hacer lo anterior pero en un solo paso es asi:<br><br><code>git checkout -b nombre_de_la_rama</code></li>
+  <li><strong>Ver todas las ramas: </strong><br><code>git branch</code><br><br>Esto muestra todas las ramas en tu repositorio local y resalta la rama en la que te encuentras actualmente.</li>
+  <li><strong>Eliminar una rama: </strong><br><code>git branch -d nombre_de_la_rama</code><br><br>Esto elimina la rama especificada. Ten en cuenta que no podrás eliminar una rama si tienes cambios que aún no han sido fusionados en otra rama.</li>
+</ol>
+<h2>Ejemplo de uso de ramas en Git:</h2>
+<p align="justify">Supongamos que estás trabajando en un proyecto y deseas implementar una nueva funcionalidad llamada "nueva-caracteristica". Puedes seguir estos pasos:</p>
+<ol>
+  <li><strong>Crear una nueva rama para la nueva funcionalidad: </strong><br><code>git checkout -b nueva-caracteristica</code><br></li>
+  <li><strong>Realizar los cambios necesarios y confirmarlos en la nueva rama: </strong><br><code>git add .</code><br><code>git commit -m "Implementar nueva característica"</code><br></li>
+  <li><strong>Cambiar de nuevo a la rama principal (por ejemplo, main o master): </strong><br><code>git checkout main</code><br></li>
+  <li><strong>Fusionar los cambios de la rama de la nueva característica en la rama principal: </strong><br><code>git merge nueva-caracteristica</code><br></li>
+  <li><strong>Finalmente, eliminar la rama de la nueva característica si ya no es necesaria: </strong><br><code>git branch -d nueva-caracteristica</code><br></li>
+</ol>
 
 
 
