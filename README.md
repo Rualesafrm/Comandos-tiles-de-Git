@@ -90,7 +90,7 @@ Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epi
   <li><strong>git show filename : </strong>Permite ver la historia de los cambios en un archivo.</li>
   <li><strong>git diff : </strong>Este comando compara los cambios entre el directorio de trabajo y el área de preparación (staging area), mostrando las diferencias entre los archivos que han sido modificados pero no han sido aún añadidos al área de preparación.</li>
 </ul>
-<h2>Volver en el tiempo con reset,rm y checkout:</h2>
+<h2>Volver en el tiempo con reset, rm y checkout:</h2>
 <p align="justify">Pero por que decimos volver en el tiempo?. Porque por ejemplo con git reset, puedes deshacer commits y moverte a un estado anterior del proyecto, conservando o eliminando cambios según lo necesites. Por otro lado, con git checkout, puedes explorar versiones anteriores del proyecto sin modificar la historia de cambios, simplemente cambiando temporalmente tu vista al estado de un commit específico. En esencia, estos comandos te permiten retroceder en el tiempo para entender, corregir o restaurar el estado de tu proyecto en momentos anteriores.</p>
 <p>Asi que vamos a verlos a continuación:</p>
 <ul>
