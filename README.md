@@ -90,7 +90,7 @@ Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epi
   <li><strong>git show filename : </strong>Permite ver la historia de los cambios en un archivo.</li>
   <li><strong>git diff : </strong>Este comando compara los cambios entre el directorio de trabajo y el área de preparación (staging area), mostrando las diferencias entre los archivos que han sido modificados pero no han sido aún añadidos al área de preparación.</li>
 </ul>
-<h2>Volver en el tiempo con reset y checkout:</h2>
+<h2>Volver en el tiempo con reset,rm y checkout:</h2>
 <p align="justify">Pero por que decimos volver en el tiempo?. Porque por ejemplo con git reset, puedes deshacer commits y moverte a un estado anterior del proyecto, conservando o eliminando cambios según lo necesites. Por otro lado, con git checkout, puedes explorar versiones anteriores del proyecto sin modificar la historia de cambios, simplemente cambiando temporalmente tu vista al estado de un commit específico. En esencia, estos comandos te permiten retroceder en el tiempo para entender, corregir o restaurar el estado de tu proyecto en momentos anteriores.</p>
 <p>Asi que vamos a verlos a continuación:</p>
 <ul>
@@ -99,8 +99,18 @@ Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epi
   <li><strong>git checkout nombre_rama : </strong>Este comando se utiliza principalmente para cambiar entre ramas en Git. Al especificar el nombre de una rama, Git te llevará al estado de esa rama, actualizando tu directorio de trabajo y el estado del área de preparación para reflejar el estado de esa rama.</li>
   <li><strong>git checkout - : </strong>Este comando te permite cambiar entre la rama actual y la última rama en la que estuviste trabajando. Es útil para alternar rápidamente entre dos ramas. Ademas si has realizado cambios en un archivo y luego has cambiado de rama sin confirmar esos cambios, <strong>git checkout - </strong>git checkout - te permite volver al estado anterior del archivo antes de que realizaras esos cambios</li>
 </ul>
-<p>Ahora exploraremos los comandos <strong>git rm </strong> y <strong> git reset.</strong></p>
-
+<p align="justify">Ahora exploraremos el comando <strong>git rm </strong>.</strong></p>
+<p align="justify">Empecemos con <strong> git rm</strong> que tiene como funcion ayudar a eliminar archivos de Git sin eliminar su historial del sistema de versiones. Esto quiere decir que si necesitamos recuperar el archivo solo debemos “viajar en el tiempo” y recuperar el último commit antes de borrar el archivo en cuestión pero algo debemos tener muy en cuenta y es que git rm no puede usarse por sí solo, así nomás. 
+<p align="justify">Por ejemplo para borrar una archivo usamos el comando:</p>
+<code>git rm miarchivo.txt</code><br><br>  
+<p align="justify">Se debe utilizar uno de los flags para indicar a Git cómo eliminar los archivos que ya no se necesitan en la última versión del proyecto:</p>
+<ul>
+  <li><strong>git rm --cached : </strong>Elimina los archivos del área de Staging y del próximo commit, pero los mantiene en nuestro disco duro.</li>
+  <li><strong>git rm --force : </strong>Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario (pero debemos aplicar comandos más avanzados).</li>
+</ul>
+<h2>¿Que son las ramas en git?</h2>
+<p align="justify">Las ramas en Git son líneas independientes de desarrollo que te permiten trabajar en diferentes características de tu proyecto de forma aislada. Cada rama tiene su propio conjunto de commits y cambios, lo que facilita la colaboración y la implementación de nuevas características sin interferir con el código principal.</p>
+<p align="justify">En palabras mas sencillas al crear una nueva rama se copia el último commit en esta nueva rama. Todos los cambios hechos en esta rama no se reflejarán en la rama master hasta que hagamos un merge.</p>
 
 
 
