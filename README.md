@@ -142,14 +142,18 @@ Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epi
 <h2>¡Realicemos nuestro primer pull request!, Pero antes ten en cuenta esto 😅:</h2>
 <p align="justify">Una buena práctica es mantener tu repositorio local sincronizado con el repositorio remoto antes de enviar un Pull Request. Esto garantiza que estés trabajando sobre la versión más reciente del código y evita conflictos innecesarios al momento de fusionar tu Pull Request.</p>
 <p align="justify">Para sincronizar tu repositorio local con el repositorio remoto, puedes seguir estos pasos:</p>
+
 <ol>
-  <li><strong>Primero, revisa en que rama estás ubicado. </strong><br><code>git branch</code><br>Esto enumerará todas las ramas y indicará en verde la rama actual o activa.<br></li>
-  <li><strong>Cambia a la rama maestra. </strong><br><code>git checkout master</code><br></li>
-  <li><strong>Agrega el repositorio original como un repositorio upstream. </strong><br>Para poder extraer los cambios desde el repositorio original a tu versión local, necesitas agregar el repositorio Git original como un repositorio upstream.<code>git remote add upstream [HTTPS]</code><br>Aquí, [HTTPS] es el URL que debes copiar del repositorio del propietario.<br></li>
-  <li><strong>Busca (fetch) el repositorio. </strong>Busca todos los cambios  del repositorio original. Las confirmaciones (commits) del repositorio original serán almacenadas en una rama local llamada upstream/master.<br><code>git fetch upstream</code><br><br></li>
-  <li><strong>Fusionala. </strong><br>Fusiona los cambios de la rama upstream/master a tu rama maestra local. Esto hará que tu rama maestra se sincronice con el repositorio upstream sin perder tus cambios locales.<code>git merge upstream/master</code><br><br></li>
+  <li><strong>Primero, revisa en que rama estás ubicado: </strong><br><code>git branch</code><br><br>Esto enumerará todas las ramas y indicará en verde la rama actual o activa.<br><br></li>
+  <li><strong>Cambia a la rama maestra: </strong><br><code>git checkout master</code><br><br></li>
+  <li><strong>Agrega el repositorio original como un repositorio upstream: </strong><br>Para poder extraer los cambios desde el repositorio original a tu versión local, necesitas agregar el repositorio Git original como un repositorio upstream.<br><code>git remote add upstream [HTTPS]</code><br><br>Aquí, [HTTPS] es el URL que debes copiar del repositorio del propietario.<br><br></li>
+  <li><strong>Busca (fetch) el repositorio: </strong>Busca todos los cambios  del repositorio original. Las confirmaciones (commits) del repositorio original serán almacenadas en una rama local llamada upstream/master.<br><code>git fetch upstream</code><br><br></li>
+  <li><strong>Fusionala: </strong><br>Fusiona los cambios de la rama upstream/master a tu rama maestra local. Esto hará que tu rama maestra se sincronice con el repositorio upstream sin perder tus cambios locales.<br><code>git merge upstream/master</code><br><br></li>
+  <li><strong>Envía (push) los cambios a GitHub: </strong><br>En este punto tu rama local está sincronizada con la rama maestra del repositorio original. Si deseas actualizar el repositorio de GitHub, necesitas enviar tus cambios.<br><code>git push origin master</code><br><br></li> 
 </ol>
+  
 <h2>¡Realicemos nuestro primer pull request!</h2>
+
 <ol>
   <li><strong>Fork del repositorio: </strong>En GitHub, visita el repositorio al que deseas contribuir y haz clic en el botón "Fork" en la esquina superior derecha de la página. Esto creará una copia del repositorio en tu propia cuenta de GitHub.</li>
   <li><strong>Clona el repositorio: </strong><br>Ahora, clona tu repositorio forked (copiado) en tu máquina local utilizando el comando git clone.<br><code>git clone URL_de_tu_repositorio_forked</code><br><br></li>
