@@ -94,12 +94,13 @@ Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epi
 <p align="justify">Pero por que decimos volver en el tiempo?. Porque por ejemplo con git reset, puedes deshacer commits y moverte a un estado anterior del proyecto, conservando o eliminando cambios según lo necesites. Por otro lado, con git checkout, puedes explorar versiones anteriores del proyecto sin modificar la historia de cambios, simplemente cambiando temporalmente tu vista al estado de un commit específico. En esencia, estos comandos te permiten retroceder en el tiempo para entender, corregir o restaurar el estado de tu proyecto en momentos anteriores.</p>
 <p>Asi que vamos a verlos a continuación:</p>
 <ul>
-  <li><strong>git log : </strong>Lista de manera descendente los commits realizados.</li>
-  <li><strong>git log --stat : </strong>Además de listar los commits, muestra la cantidad de bytes añadidos y eliminados en cada uno de los archivos modificados.</li>
-  <li><strong>git log --all --graph --decorate --oneline : </strong>Este comando mostrará una representación gráfica y compacta de toda la historia del repositorio, con cada commit representado por una sola línea.</li>
-  <li><strong>git show filename : </strong>Permite ver la historia de los cambios en un archivo.</li>
-  <li><strong>git diff : </strong>Este comando compara los cambios entre el directorio de trabajo y el área de preparación (staging area), mostrando las diferencias entre los archivos que han sido modificados pero no han sido aún añadidos al área de preparación.</li>
+  <li><strong>git reset --soft referencia : </strong>Este comando deshace el último commit, pero mantiene los cambios que habías realizado en el área de preparación (staging area), lo que te permite volver a confirmarlos con un nuevo mensaje de commit. (referencia: Puede ser un hash de commit, una rama, o una etiqueta, que especifica el commit al que deseas retroceder.)</li>
+  <li><strong>git reset --hard referencia : </strong>En cambio, este comando deshace el último commit y borra todos los cambios posteriores realizados en el directorio de trabajo y el área de preparación. Los cambios se pierden permanentemente.</li>
+  <li><strong>git checkout nombre_rama : </strong>Este comando se utiliza principalmente para cambiar entre ramas en Git. Al especificar el nombre de una rama, Git te llevará al estado de esa rama, actualizando tu directorio de trabajo y el estado del área de preparación para reflejar el estado de esa rama.</li>
+  <li><strong>git checkout - : </strong>Este comando te permite cambiar entre la rama actual y la última rama en la que estuviste trabajando. Es útil para alternar rápidamente entre dos ramas. Ademas si has realizado cambios en un archivo y luego has cambiado de rama sin confirmar esos cambios, <strong>git checkout - </strong>git checkout - te permite volver al estado anterior del archivo antes de que realizaras esos cambios</li>
 </ul>
+<p>Ahora exploraremos los comandos <strong>git rm </strong> y <strong> git reset.</strong></p>
+
 
 
 
