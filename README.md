@@ -72,15 +72,37 @@ Si ingresas mal el link o necesitas simplemente cambiarlo haces lo siguiente:<br
 <code>git push -u origin main</code>(o tambien puede ser master depende como lo llames)<br><br>
 </li>
 </ol> 
-<p>Excelente con esto que hemos hecho se subirá los cambios de tu rama local main al repositorio remoto en GitHub. Ahora si estas listo para compartir tu repositorio con las demas personas del mundo.</p>
+<p align="justify">Excelente con esto que hemos hecho se subirá los cambios de tu rama local main al repositorio remoto en GitHub. Ahora si estas listo para compartir tu repositorio con las demas personas del mundo.</p>
 <h2 align="center">Hagamos una pausa, quiero que pienses en lo siguiente</h2>
 <p align="center"><a href="#"><img src="https://www.portafolio.co/files/article_new_multimedia/uploads/2017/09/11/59b6fefd616bf.jpeg" alt="Imagen" width="100%"></a></p>
 <p align="justify">Quiero que entiendas lo poderoso de esta herramienta y los beneficios que te puede traer a ti como desarrollador ya que compartir tus repositorios en plataformas como GitHub te permite colaborar con otros desarrolladores, aumentar tu visibilidad en la comunidad, mantener un historial de cambios detallado, recibir feedback y revisión de otros, y contribuir al conocimiento colectivo al compartir tus proyectos y soluciones con la comunidad de desarrollo de software.</p>
-<p align="justify">Imaginemos por un momento que tu quieres ser un Freelancer, hay varias plataformas donde tu puedes encontrar el trabajo remoto bien remunerado que todos queremos, pero necesitas mostrar que sabes hacer no importa si tiene experiencia o no, debes contar con un portafolio que demuestre tus conocimuientos para que seas un perfil atractivo para las empresas. Entonces adivina que?. Exacto ahi entra en juego tu repositorio que acabas de crear y subir para que otros vean tus trabajos por eso quiero que entiendas lo siguiente:</p>
+<p align="justify">Imaginemos por un momento que tu quieres ser un Freelancer, hay varias plataformas donde tu puedes encontrar el trabajo remoto bien remunerado que todos queremos, pero necesitas mostrar que sabes hacer no importa si tiene experiencia o no, debes contar con un portafolio que demuestre tus conocimientos para que seas un perfil atractivo para las empresas. Entonces adivina que?. Exacto ahi entra en juego tu repositorio que acabas de crear y subir para que otros vean tus trabajos por eso quiero que entiendas lo siguiente:</p>
 <p align="justify">Tener tu propio repositorio en GitHub como freelancer es una jugada inteligente que puede transformar tu carrera. No solo es una ventana abierta a un mundo de oportunidades, sino que también es tu tarjeta de presentación en el universo digital. Al exhibir tu talento y proyectos en una plataforma tan influyente, te destacas entre la multitud, atrayendo clientes potenciales y colaboradores interesados. Además, es un arsenal de herramientas poderosas: te brinda el control de versiones para tus proyectos, facilita la colaboración con clientes y colegas, y te permite compartir tus innovaciones con la comunidad global de desarrolladores.<br><br>
 Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epicentro de tu éxito como freelance en el mundo digital!</p>
 <h2 align="center">Muy bien, continuemos donde lo dejamos</h2>
-<p>Ahora que ya conocemos como movernos entre carpetas usando la consola de comandos o el Git Bash, sabemos crear nuestro repositorio de forma local y subirlo a la plataforma de GitHub para que otros interactuen con el quiero mostrarte algunos comandos que te ayudara en </p>
+<p align="justify">Ahora que ya conocemos como movernos entre carpetas usando la consola de comandos o el Git Bash, sabemos crear nuestro repositorio de forma local y subirlo a la plataforma de GitHub para que otros interactuen con el quiero mostrarte algunos comandos que te ayudaran en tu trabajo: </p>
+<h2>Analizar cambios en los archivos de un proyecto Git:</h2>
+<p align="justify">Para lograr visualizar que cambios hemos hecho desde que se creo nuestro repositorio, disponemos de comandos tales como:</p>
+<ul>
+  <li><strong>git log : </strong>Lista de manera descendente los commits realizados.</li>
+  <li><strong>git log --stat : </strong>Además de listar los commits, muestra la cantidad de bytes añadidos y eliminados en cada uno de los archivos modificados.</li>
+  <li><strong>git log --all --graph --decorate --oneline : </strong>Este comando mostrará una representación gráfica y compacta de toda la historia del repositorio, con cada commit representado por una sola línea.</li>
+  <li><strong>git show filename : </strong>Permite ver la historia de los cambios en un archivo.</li>
+  <li><strong>git diff : </strong>Este comando compara los cambios entre el directorio de trabajo y el área de preparación (staging area), mostrando las diferencias entre los archivos que han sido modificados pero no han sido aún añadidos al área de preparación.</li>
+</ul>
+<h2>Volver en el tiempo con reset y checkout:</h2>
+<p align="justify">Pero por que decimos volver en el tiempo?. Porque por ejemplo con git reset, puedes deshacer commits y moverte a un estado anterior del proyecto, conservando o eliminando cambios según lo necesites. Por otro lado, con git checkout, puedes explorar versiones anteriores del proyecto sin modificar la historia de cambios, simplemente cambiando temporalmente tu vista al estado de un commit específico. En esencia, estos comandos te permiten retroceder en el tiempo para entender, corregir o restaurar el estado de tu proyecto en momentos anteriores.</p>
+<p>Asi que vamos a verlos a continuación:</p>
+<ul>
+  <li><strong>git log : </strong>Lista de manera descendente los commits realizados.</li>
+  <li><strong>git log --stat : </strong>Además de listar los commits, muestra la cantidad de bytes añadidos y eliminados en cada uno de los archivos modificados.</li>
+  <li><strong>git log --all --graph --decorate --oneline : </strong>Este comando mostrará una representación gráfica y compacta de toda la historia del repositorio, con cada commit representado por una sola línea.</li>
+  <li><strong>git show filename : </strong>Permite ver la historia de los cambios en un archivo.</li>
+  <li><strong>git diff : </strong>Este comando compara los cambios entre el directorio de trabajo y el área de preparación (staging area), mostrando las diferencias entre los archivos que han sido modificados pero no han sido aún añadidos al área de preparación.</li>
+</ul>
+
+
+
 
 
 
