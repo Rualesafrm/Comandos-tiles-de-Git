@@ -67,8 +67,10 @@ Si ingresas mal el link o necesitas simplemente cambiarlo haces lo siguiente:<br
 <strong>Cambiar el link:</strong><br>
 <code>git remote set-url origin nueva_url</code><br><br>
 <strong>Volver a verificar el link:</strong><br>
-<code>git remote -v</code></li>
-<li><strong>Subir los cambios al repositorio remoto:</strong> Una vez que hayas conectado tu repositorio local a GitHub, puedes subir los cambios al repositorio remoto ejecutando el siguiente comando:</li>
+<code>git remote -v</code></li><br>
+<li><strong>Subir los cambios al repositorio remoto:</strong> Una vez que hayas conectado tu repositorio local a GitHub, puedes subir los cambios al repositorio remoto ejecutando el siguiente comando:<br>
+<code>git push -u origin main</code>(o tambien puede ser master depende como lo llames)<br><br>
+Esto subirá los cambios de tu rama local main al repositorio remoto en GitHub.</li>
   
 </ol> 
 
