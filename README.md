@@ -139,6 +139,16 @@ Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epi
 <p align="justify">Este viaje ha sido genial , contamos con conocimientos suficientes para manejar y gestionar nuestros repositorios en Git y GitHub, pero espera aun falta algo muy importante y son los "Pull request"</p>
 <p align="justify">Un Pull Request es una herramienta esencial en el mundo del desarrollo colaborativo que te permite proponer cambios en un proyecto de manera clara y organizada. Es una puerta abierta a la colaboración, donde puedes compartir tus ideas, recibir retroalimentación de colegas y asegurarte de que tus contribuciones se fusionen de manera segura en el código principal.</p>
 <p align="justify">Espero que con esa breve descripcion que te acabo de proporcionar comprendas lo importante del asunto. Ahora te guiare a como hacer un pull request para que tengas los conocimientos necesarios para cuando lo necesites realizar en tu trabajo.</p>
+<h2>¡Realicemos nuestro primer pull request!, Pero antes ten en cuenta esto 😅:</h2>
+<p align="justify">Una buena práctica es mantener tu repositorio local sincronizado con el repositorio remoto antes de enviar un Pull Request. Esto garantiza que estés trabajando sobre la versión más reciente del código y evita conflictos innecesarios al momento de fusionar tu Pull Request.</p>
+<p align="justify">Para sincronizar tu repositorio local con el repositorio remoto, puedes seguir estos pasos:</p>
+<ol>
+  <li><strong>Primero, revisa en que rama estás ubicado. </strong><br><code>git branch</code><br>Esto enumerará todas las ramas y indicará en verde la rama actual o activa.<br></li>
+  <li><strong>Cambia a la rama maestra. </strong><br><code>git checkout master</code><br></li>
+  <li><strong>Agrega el repositorio original como un repositorio upstream. </strong><br>Para poder extraer los cambios desde el repositorio original a tu versión local, necesitas agregar el repositorio Git original como un repositorio upstream.<code>git remote add upstream [HTTPS]</code><br>Aquí, [HTTPS] es el URL que debes copiar del repositorio del propietario.<br></li>
+  <li><strong>Busca (fetch) el repositorio. </strong>Busca todos los cambios  del repositorio original. Las confirmaciones (commits) del repositorio original serán almacenadas en una rama local llamada upstream/master.<br><code>git fetch upstream</code><br><br></li>
+  <li><strong>Fusionala. </strong><br>Fusiona los cambios de la rama upstream/master a tu rama maestra local. Esto hará que tu rama maestra se sincronice con el repositorio upstream sin perder tus cambios locales.<code>git merge upstream/master</code><br><br></li>
+</ol>
 <h2>¡Realicemos nuestro primer pull request!</h2>
 <ol>
   <li><strong>Fork del repositorio: </strong>En GitHub, visita el repositorio al que deseas contribuir y haz clic en el botón "Fork" en la esquina superior derecha de la página. Esto creará una copia del repositorio en tu propia cuenta de GitHub.</li>
