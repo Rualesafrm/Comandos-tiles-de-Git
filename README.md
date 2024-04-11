@@ -79,7 +79,8 @@ Si ingresas mal el link o necesitas simplemente cambiarlo haces lo siguiente:<br
 <p align="justify">Imaginemos por un momento que tu quieres ser un Freelancer, hay varias plataformas donde tu puedes encontrar el trabajo remoto bien remunerado que todos queremos, pero necesitas mostrar que sabes hacer no importa si tiene experiencia o no, debes contar con un portafolio que demuestre tus conocimuientos para que seas un perfil atractivo para las empresas. Entonces adivina que?. Exacto ahi entra en juego tu repositorio que acabas de crear y subir para que otros vean tus trabajos por eso quiero que entiendas lo siguiente:</p>
 <p align="justify">Tener tu propio repositorio en GitHub como freelancer es una jugada inteligente que puede transformar tu carrera. No solo es una ventana abierta a un mundo de oportunidades, sino que también es tu tarjeta de presentación en el universo digital. Al exhibir tu talento y proyectos en una plataforma tan influyente, te destacas entre la multitud, atrayendo clientes potenciales y colaboradores interesados. Además, es un arsenal de herramientas poderosas: te brinda el control de versiones para tus proyectos, facilita la colaboración con clientes y colegas, y te permite compartir tus innovaciones con la comunidad global de desarrolladores.<br><br>
 Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epicentro de tu éxito como freelance en el mundo digital!</p>
-
+<h2 align="center">Muy bien, continuemos donde lo dejamos</h2>
+<p>Ahora que ya conocemos como movernos entre carpetas usando la consola de comandos o el Git Bash, sabemos crear nuestro repositorio de forma local y subirlo a la plataforma de GitHub para que otros interactuen con el quiero mostrarte algunos comandos que te ayudara en </p>
 
 
 
