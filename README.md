@@ -151,6 +151,8 @@ Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epi
   <li><strong>Fusionala: </strong><br>Fusiona los cambios de la rama upstream/master a tu rama maestra local. Esto hará que tu rama maestra se sincronice con el repositorio upstream sin perder tus cambios locales.<br><code>git merge upstream/master</code><br><br></li>
   <li><strong>Envía (push) los cambios a GitHub: </strong><br>En este punto tu rama local está sincronizada con la rama maestra del repositorio original. Si deseas actualizar el repositorio de GitHub, necesitas enviar tus cambios.<br><code>git push origin master</code><br><br></li> 
 </ol>
+
+<p align="justify">Excelente, ahora si!!😎</p>
   
 <h2>¡Realicemos nuestro primer pull request!</h2>
 
