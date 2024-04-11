@@ -129,11 +129,11 @@ Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epi
 <h2>Ejemplo de uso de ramas en Git:</h2>
 <p align="justify">Supongamos que estás trabajando en un proyecto y deseas implementar una nueva funcionalidad llamada "nueva-caracteristica". Puedes seguir estos pasos:</p>
 <ol>
-  <li><strong>Crear una nueva rama para la nueva funcionalidad: </strong><br><code>git checkout -b nueva-caracteristica</code><br></li>
-  <li><strong>Realizar los cambios necesarios y confirmarlos en la nueva rama: </strong><br><code>git add .</code><br><code>git commit -m "Implementar nueva característica"</code><br></li>
-  <li><strong>Cambiar de nuevo a la rama principal (por ejemplo, main o master): </strong><br><code>git checkout main</code><br></li>
-  <li><strong>Fusionar los cambios de la rama de la nueva característica en la rama principal: </strong><br><code>git merge nueva-caracteristica</code><br></li>
-  <li><strong>Finalmente, eliminar la rama de la nueva característica si ya no es necesaria: </strong><br><code>git branch -d nueva-caracteristica</code><br></li>
+  <li><strong>Crear una nueva rama para la nueva funcionalidad: </strong><br><code>git checkout -b nueva-caracteristica</code><br><br></li>
+  <li><strong>Realizar los cambios necesarios y confirmarlos en la nueva rama: </strong><br><code>git add .</code><br><code>git commit -m "Implementar nueva característica"</code><br><br></li>
+  <li><strong>Cambiar de nuevo a la rama principal (por ejemplo, main o master): </strong><br><code>git checkout main</code><br><br></li>
+  <li><strong>Fusionar los cambios de la rama de la nueva característica en la rama principal: </strong><br><code>git merge nueva-caracteristica</code><br><br></li>
+  <li><strong>Finalmente, eliminar la rama de la nueva característica si ya no es necesaria: </strong><br><code>git branch -d nueva-caracteristica</code><br><br></li>
 </ol>
 
 
