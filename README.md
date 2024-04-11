@@ -135,6 +135,28 @@ Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epi
   <li><strong>Fusionar los cambios de la rama de la nueva característica en la rama principal: </strong><br><code>git merge nueva-caracteristica</code><br><br></li>
   <li><strong>Finalmente, eliminar la rama de la nueva característica si ya no es necesaria: </strong><br><code>git branch -d nueva-caracteristica</code><br><br></li>
 </ol>
+<h2 align="center">Sigamos con nuestro camino</h2>
+<p align="justify">Este viaje ha sido genial , contamos con conocimientos suficientes para manejar y gestionar nuestros repositorios en Git y GitHub, pero espera aun falta algo muy importante y son los "Pull request"</p>
+<p align="justify">Un Pull Request es una herramienta esencial en el mundo del desarrollo colaborativo que te permite proponer cambios en un proyecto de manera clara y organizada. Es una puerta abierta a la colaboración, donde puedes compartir tus ideas, recibir retroalimentación de colegas y asegurarte de que tus contribuciones se fusionen de manera segura en el código principal.</p>
+<p align="justify">Espero que con esa breve descripcion que te acabo de proporcionar comprendas lo importante del asunto. Ahora te guiare a como hacer un pull request para que tengas los conocimientos necesarios para cuando lo necesites realizar en tu trabajo.</p>
+<h2>¡Realicemos nuestro primer pull request!</h2>
+<ol>
+  <li><strong>Fork del repositorio: </strong>En GitHub, visita el repositorio al que deseas contribuir y haz clic en el botón "Fork" en la esquina superior derecha de la página. Esto creará una copia del repositorio en tu propia cuenta de GitHub.</li>
+  <li><strong>Clona el repositorio: </strong><br>Ahora, clona tu repositorio forked (copiado) en tu máquina local utilizando el comando git clone.<br><code>git clone URL_de_tu_repositorio_forked</code><br><br></li>
+  <li><strong>Crea una nueva rama: </strong><br>Cambia a una nueva rama donde realizarás tus cambios. Esto te permitirá trabajar de manera aislada sin afectar la rama principal del repositorio original.<br><code>git checkout -b nombre_de_tu_rama</code><br><br></li>
+  <li><strong>Realiza los cambios: </strong><br>Haz los cambios necesarios en los archivos de tu proyecto en tu editor de código favorito.<br><br></li>
+  <li><strong>Agrega y confirma los cambios:  </strong><br>Agrega los archivos modificados al área de preparación y confirma los cambios con un mensaje descriptivo.<br><code>git add .</code><br><code>git commit -m "Descripción de tus cambios"</code><br></li>
+  <li><strong>Sube la rama al repositorio remoto:  </strong><br>Sube la nueva rama y los cambios asociados a tu repositorio forked en GitHub.<br><code>git push origin nombre_de_tu_rama</code><br><br></li>
+  <li><strong>Crea el Pull Request en GitHub: </strong><br><ul>
+  <li>Visita tu repositorio forked en GitHub.</li>
+  <li>En la página principal de tu repositorio, cambia a la rama que acabas de subir.</li>
+  <li>Haz clic en el botón "Pull Request" (o "Crear Pull Request").</li>
+  <li>Selecciona la rama base (normalmente la rama principal) del repositorio original y la rama que acabas de subir desde tu repositorio forked.</li>
+  <li>Proporciona un título y una descripción para el Pull Request, explicando los cambios realizados y por qué son necesarios.</li></ul><br></li>
+  <li><strong>Solicita la revisión: </strong> Etiqueta a los colaboradores relevantes y solicita su revisión en el Pull Request. Esto les notificará y les permitirá dejar comentarios y realizar revisiones de código.</li>
+  <li><strong>Espera la aprobación y fusión: </strong> Una vez que los cambios hayan sido revisados y aprobados, el propietario del repositorio original puede fusionar el Pull Request en su rama principal.</li>
+</ol>
+<p align="justify">Siguiendo estos pasos, podrás contribuir efectivamente a proyectos de código abierto o colaborar con tu equipo de desarrollo utilizando Pull Requests en GitHub.</p>
 
 
 
