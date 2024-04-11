@@ -74,6 +74,11 @@ Si ingresas mal el link o necesitas simplemente cambiarlo haces lo siguiente:<br
 </ol> 
 <p>Excelente con esto que hemos hecho se subirá los cambios de tu rama local main al repositorio remoto en GitHub. Ahora si estas listo para compartir tu repositorio con las demas personas del mundo.</p>
 <h2 align="center">Hagamos una pausa, quiero que pienses en lo siguiente</h2>
+  <picture>
+  <source srcset="https://www.portafolio.co/files/article_new_multimedia/uploads/2017/09/11/59b6fefd616bf.jpeg" media="(max-width: 600px)">
+  <source srcset="https://www.portafolio.co/files/article_new_multimedia/uploads/2017/09/11/59b6fefd616bf.jpeg" media="(min-width: 600px)">
+  <img src="https://www.portafolio.co/files/article_new_multimedia/uploads/2017/09/11/59b6fefd616bf.jpeg" alt="Imagen">
+</picture>
 <p align="center"><a href="#"><img src="https://www.portafolio.co/files/article_new_multimedia/uploads/2017/09/11/59b6fefd616bf.jpeg" alt="Imagen" width="50%"></a></p>
 <p align="justify">Quiero que entiendas lo poderoso de esta herramienta y los beneficios que te puede traer a ti como desarrollador ya que compartir tus repositorios en plataformas como GitHub te permite colaborar con otros desarrolladores, aumentar tu visibilidad en la comunidad, mantener un historial de cambios detallado, recibir feedback y revisión de otros, y contribuir al conocimiento colectivo al compartir tus proyectos y soluciones con la comunidad de desarrollo de software.</p>
 <p align="justify">Imaginemos por un momento que tu quieres ser un Freelancer, hay varias plataformas donde tu puedes encontrar el trabajo remoto bien remunerado que todos queremos, pero necesitas mostrar que sabes hacer no importa si tiene experiencia o no, debes contar con un portafolio que demuestre tus conocimuientos para que seas un perfil atractivo para las empresas. Entonces adivina que?. Exacto ahi entra en juego tu repositorio que acabas de crear y subir para que otros vean tus trabajos por eso quiero que entiendas lo siguiente:</p>
