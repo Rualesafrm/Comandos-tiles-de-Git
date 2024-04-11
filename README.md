@@ -1,5 +1,5 @@
 <h1 align="center"> Guia de comandos útiles en Git </h1>
-<p align="left"> <img src="https://blog.desafiolatam.com/wp-content/uploads/2016/05/git-github-logo.jpg"> </p>
+<a href="#"><img src="https://blog.desafiolatam.com/wp-content/uploads/2016/05/git-github-logo.jpg"></a>
 <p align="justify">Este repositorio contiene una recopilación de comandos esenciales de Git que te ayudarán a dominar el control de versiones y la colaboración en proyectos de desarrollo de software. Ya sea que estés comenzando con Git o que desees mejorar tus habilidades, aquí encontrarás una guía práctica y fácil de seguir para navegar por las funcionalidades más comunes de esta poderosa herramienta.</p>
 <h2 align="center"> Primero lo básico: Saber moverte en tu entorno</h2>
 <p align="justify">Para empezar con nuestro repositorio, inicialmente debemos conocer como podemos movernos entre las carpetas es decir entrar o salir de ellas, como crear archivos o carpetas, tambien como mover o renombrar archivos y carpetas. Otras cosas que debemos saber es como mostrar todos los archivos que contiene la carpeta en la que estamos situados, entre otras cosas que veremos aqui que se pueden realizar.</p>
@@ -20,12 +20,12 @@
 <h2 align="center"> Ahora que ya aprendiste lo básico, vamos a crear nuestro repositorio desde cero</h2>
 <p align="justify">Ten en cuenta algo importante y es que para poder iniciar con esta serie de comandos primero debes haber establecido mediante tu consola de comandos o tu Git Bash la ubicación de tu carpeta donde vas a crear tu repositorio. Recuerda que eso lo haces con los comandos que vimos al inicio de esta guía.</p>
 <p align="justify">Si tienes dudas de como hacerlo, simplemente abre tu consola de comandos o tu Git Bash que debe estar previamente instalado y coloca el siguiente comando:</p>
-<p align="justify"><strong>cd D:\repositorio</strong></p>
+<p align="justify"><strong><code>cd D:/repositorio</code></strong></p>
 <p align="justify">En este ejemplo estamos accediendo al Disco Local D: y estamos entrando en una carpeta que ya existe llamada "repositorio". Habran casos donde las carpetas tendran nombres con espacio u otro tipo de caracteres, notaras que al ejecutar este mismo comando pero usando solo la dirección de la carpeta no bastara, ya que obtendras un error. Para poder dar solucion basta con agregar comillas dobles al nombre de la carpeta("nombrecarpeta"). Es decir si mi carpeta se llama "repositorio JS" o "Desarrollo Web" deberas hacer lo siguiente:</p>
 <p align="justify">Primero para no complicarte y liberarte de errores entra al Disco Local D:, eso lo hacemos de la siguiente manera:</p>
-<p><strong>cd D:\</strong></p>
+<p><strong><code>cd D:/</code></strong></p>
 <palign="justify">Luego de que ya estas dentro de Disco Local D: y sabes que tu carpeta llamada "Desarrollo Web" esta ahi, haces lo siguiente:</p>
-<p><strong>cd "Desarrollo Web"</strong></p>
+<p><strong><code>cd "Desarrollo Web"</code></strong></p>
 <p align="justify">Bingo 👌, estas dentro de tu carpeta lista para ser nuestro nuevo repositorio.</p>
 <p align="justify">Ahora para poder crear nuestro repositorio debemos segir los siguientes pasos:</p>
 <ul>
@@ -70,9 +70,16 @@ Si ingresas mal el link o necesitas simplemente cambiarlo haces lo siguiente:<br
 <code>git remote -v</code></li><br>
 <li><strong>Subir los cambios al repositorio remoto:</strong> Una vez que hayas conectado tu repositorio local a GitHub, puedes subir los cambios al repositorio remoto ejecutando el siguiente comando:<br>
 <code>git push -u origin main</code>(o tambien puede ser master depende como lo llames)<br><br>
-Esto subirá los cambios de tu rama local main al repositorio remoto en GitHub.</li>
-  
+</li>
 </ol> 
+<p>Excelente con esto que hemos hecho se subirá los cambios de tu rama local main al repositorio remoto en GitHub. Ahora si estas listo para compartir tu repositorio con las demas personas del mundo.</p>
+<h2 align="center">Hagamos una pausa, quiero que pienses en lo siguiente</h2>
+<p align="center"><a href="#"><img src="https://www.portafolio.co/files/article_new_multimedia/uploads/2017/09/11/59b6fefd616bf.jpeg" alt="Imagen" width="800" height="400"></a></p>
+<p align="justify">Quiero que entiendas lo poderoso de esta herramienta y los beneficios que te puede traer a ti como desarrollador ya que compartir tus repositorios en plataformas como GitHub te permite colaborar con otros desarrolladores, aumentar tu visibilidad en la comunidad, mantener un historial de cambios detallado, recibir feedback y revisión de otros, y contribuir al conocimiento colectivo al compartir tus proyectos y soluciones con la comunidad de desarrollo de software.</p>
+<p align="justify">Imaginemos por un momento que tu quieres ser un Freelancer, hay varias plataformas donde tu puedes encontrar el trabajo remoto bien remunerado que todos queremos, pero necesitas mostrar que sabes hacer no importa si tiene experiencia o no, debes contar con un portafolio que demuestre tus conocimuientos para que seas un perfil atractivo para las empresas. Entonces adivina que?. Exacto ahi entra en juego tu repositorio que acabas de crear y subir para que otros vean tus trabajos por eso quiero que entiendas lo siguiente:</p>
+<p align="justify">Tener tu propio repositorio en GitHub como freelancer es una jugada inteligente que puede transformar tu carrera. No solo es una ventana abierta a un mundo de oportunidades, sino que también es tu tarjeta de presentación en el universo digital. Al exhibir tu talento y proyectos en una plataforma tan influyente, te destacas entre la multitud, atrayendo clientes potenciales y colaboradores interesados. Además, es un arsenal de herramientas poderosas: te brinda el control de versiones para tus proyectos, facilita la colaboración con clientes y colegas, y te permite compartir tus innovaciones con la comunidad global de desarrolladores.<br><br>
+Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epicentro de tu éxito como freelance en el mundo digital!</p>
+
 
 
 
