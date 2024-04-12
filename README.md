@@ -135,25 +135,37 @@ Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epi
 </ul>
 
 <p align="justify">Ahora exploraremos el comando <strong>git rm </strong>.</strong></p>
-<p align="justify">Empecemos con <strong> git rm</strong> que tiene como funcion ayudar a eliminar archivos de Git sin eliminar su historial del sistema de versiones. Esto quiere decir que si necesitamos recuperar el archivo solo debemos “viajar en el tiempo” y recuperar el último commit antes de borrar el archivo en cuestión pero algo debemos tener muy en cuenta y es que git rm no puede usarse por sí solo, así nomás. 
-<p align="justify">Por ejemplo para borrar una archivo usamos el comando:</p>
+
+<p align="justify">Empecemos con <strong> git rm</strong> que tiene como función ayudar a eliminar archivos de Git sin eliminar su historial del sistema de versiones. Esto quiere decir que si necesitamos recuperar el archivo solo debemos “viajar en el tiempo” y recuperar el último commit antes de borrar el archivo en cuestión, pero algo debemos tener muy en cuenta y es que git rm no puede usarse por sí solo, así nomás.</p> 
+
+<p align="justify">Por ejemplo, para borrar un archivo usamos el comando:</p>
 <code>git rm miarchivo.txt</code><br><br>  
+
 <p align="justify">Se debe utilizar uno de los flags para indicar a Git cómo eliminar los archivos que ya no se necesitan en la última versión del proyecto:</p>
+
 <ul>
   <li><strong>git rm --cached : </strong>Elimina los archivos del área de Staging y del próximo commit, pero los mantiene en nuestro disco duro.</li>
   <li><strong>git rm --force : </strong>Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario (pero debemos aplicar comandos más avanzados).</li>
 </ul>
+
 <h2>¿Que son las ramas en git?</h2>
+
 <p align="justify">Las ramas en Git son líneas independientes de desarrollo que te permiten trabajar en diferentes características de tu proyecto de forma aislada. Cada rama tiene su propio conjunto de commits y cambios, lo que facilita la colaboración y la implementación de nuevas características sin interferir con el código principal.</p>
-<p align="justify">En palabras mas sencillas al crear una nueva rama se copia el último commit en esta nueva rama. Todos los cambios hechos en esta rama no se reflejarán en la rama master hasta que hagamos un merge.</p>
+
+<p align="justify">En palabras más sencillas, al crear una nueva rama se copia el último commit en esta nueva rama. Todos los cambios hechos en esta rama no se reflejarán en la rama master hasta que hagamos un merge.</p>
+
 <h2>¿Por que usar ramas?</h2>
+
 <ul>
   <li><strong>Desarrollo paralelo: </strong>Las ramas te permiten trabajar en diferentes funcionalidades o correcciones de errores de forma simultánea sin afectar el código en otras ramas.</li>
   <li><strong>Experimentación segura: </strong>Puedes probar nuevas ideas o implementaciones en una rama separada sin afectar la estabilidad del código principal.</li>
   <li><strong>Colaboración:  </strong>Facilita la colaboración en equipo al permitir que múltiples desarrolladores trabajen en diferentes partes del proyecto al mismo tiempo.</li>
 </ul>
+
 <h2>Uso básico de ramas en Git</h2>
-<p>Quiero mostrarte una guia de como puedes gestionar tus ramas en tus repositorios. Asi que empecemos:</p>
+
+<p>Quiero mostrarte una guía de como puedes gestionar tus ramas en tus repositorios. Así que empecemos:</p>
+
 <ol>
   <li><strong>Crear una nueva rama: </strong><br><code>git branch nombre_de_la_rama</code><br><br>Esto crea una nueva rama con el nombre especificado pero no cambia a esa rama.</li>
   <li><strong>Cambiar a una rama existente o la que acabamos de crear: </strong><br><code>git checkout nombre_de_la_rama</code><br><br>Esto cambia tu directorio de trabajo y tu HEAD a la rama especificada, permitiéndote trabajar en esa rama.<br><br>
@@ -161,8 +173,11 @@ Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epi
   <li><strong>Ver todas las ramas: </strong><br><code>git branch</code><br><br>Esto muestra todas las ramas en tu repositorio local y resalta la rama en la que te encuentras actualmente.</li>
   <li><strong>Eliminar una rama: </strong><br><code>git branch -d nombre_de_la_rama</code><br><br>Esto elimina la rama especificada. Ten en cuenta que no podrás eliminar una rama si tienes cambios que aún no han sido fusionados en otra rama.</li>
 </ol>
+
 <h2>Ejemplo de uso de ramas en Git:</h2>
+
 <p align="justify">Supongamos que estás trabajando en un proyecto y deseas implementar una nueva funcionalidad llamada "nueva-caracteristica". Puedes seguir estos pasos:</p>
+
 <ol>
   <li><strong>Crear una nueva rama para la nueva funcionalidad: </strong><br><code>git checkout -b nueva-caracteristica</code><br><br></li>
   <li><strong>Realizar los cambios necesarios y confirmarlos en la nueva rama: </strong><br><code>git add .</code><br><code>git commit -m "Implementar nueva característica"</code><br><br></li>
@@ -170,12 +185,19 @@ Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epi
   <li><strong>Fusionar los cambios de la rama de la nueva característica en la rama principal: </strong><br><code>git merge nueva-caracteristica</code><br><br></li>
   <li><strong>Finalmente, eliminar la rama de la nueva característica si ya no es necesaria: </strong><br><code>git branch -d nueva-caracteristica</code><br><br></li>
 </ol>
+
 <h2 align="center">Sigamos con nuestro camino</h2>
-<p align="justify">Este viaje ha sido genial , contamos con conocimientos suficientes para manejar y gestionar nuestros repositorios en Git y GitHub, pero espera aun falta algo muy importante y son los "Pull request"</p>
+
+<p align="justify">Este viaje ha sido genial, contamos con conocimientos suficientes para manejar y gestionar nuestros repositorios en Git y GitHub, pero espera aún falta algo muy importante y son los "Pull request"</p>
+
 <p align="justify">Un Pull Request es una herramienta esencial en el mundo del desarrollo colaborativo que te permite proponer cambios en un proyecto de manera clara y organizada. Es una puerta abierta a la colaboración, donde puedes compartir tus ideas, recibir retroalimentación de colegas y asegurarte de que tus contribuciones se fusionen de manera segura en el código principal.</p>
-<p align="justify">Espero que con esa breve descripcion que te acabo de proporcionar comprendas lo importante del asunto. Ahora te guiare a como hacer un pull request para que tengas los conocimientos necesarios para cuando lo necesites realizar en tu trabajo.</p>
+
+<p align="justify">Espero que con esa breve descripción que te acabo de proporcionar comprendas lo importante del asunto. Ahora te guiaré a como hacer un pull request para que tengas los conocimientos necesarios para cuando lo necesites realizar en tu trabajo.</p>
+
 <h2>¡Realicemos nuestro primer pull request!, Pero antes ten en cuenta esto 😅:</h2>
-<p align="justify">Una buena práctica es mantener tu repositorio local sincronizado con el repositorio remoto antes de enviar un Pull Request. Esto garantiza que estés trabajando sobre la versión más reciente del código y evita conflictos innecesarios al momento de fusionar tu Pull Request.</p>
+
+<p align="justify">Una buena práctica es mantener tu repositorio local sincronizado con el repositorio remoto antes de enviar un Pull Request. Esto garantiza que estés trabajando sobre la versión más reciente del código y evita conflictos innecesarios al momento de fusionar tú Pull Request.</p>
+
 <p align="justify">Para sincronizar tu repositorio local con el repositorio remoto, puedes seguir estos pasos:</p>
 
 <ol>
