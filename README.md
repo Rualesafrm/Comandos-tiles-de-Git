@@ -128,8 +128,8 @@ Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epi
 <p>Asi que vamos a verlos a continuación:</p>
 
 <ul>
-  <li><strong>git reset --soft referencia : </strong>Este comando deshace el último commit, pero mantiene los cambios que habías realizado en el área de preparación (staging area), lo que te permite volver a confirmarlos con un nuevo mensaje de commit. (referencia: Puede ser un hash de commit, una rama, o una etiqueta, que especifica el commit al que deseas retroceder.)</li>
-  <li><strong>git reset --hard referencia : </strong>En cambio, este comando deshace el último commit y borra todos los cambios posteriores realizados en el directorio de trabajo y el área de preparación. Los cambios se pierden permanentemente.</li>
+  <li><strong>git reset referencia --soft : </strong>Este comando deshace el último commit, pero mantiene los cambios que habías realizado en el área de preparación (staging area), lo que te permite volver a confirmarlos con un nuevo mensaje de commit. (referencia: Puede ser un hash de commit, una rama, o una etiqueta, que especifica el commit al que deseas retroceder.)</li>
+  <li><strong>git reset referencia  --hard : </strong>En cambio, este comando deshace el último commit y borra todos los cambios posteriores realizados en el directorio de trabajo y el área de preparación. Los cambios se pierden permanentemente.</li>
   <li><strong>git checkout nombre_rama : </strong>Este comando se utiliza principalmente para cambiar entre ramas en Git. Al especificar el nombre de una rama, Git te llevará al estado de esa rama, actualizando tu directorio de trabajo y el estado del área de preparación para reflejar el estado de esa rama.</li>
   <li><strong>git checkout - : </strong>Este comando te permite cambiar entre la rama actual y la última rama en la que estuviste trabajando. Es útil para alternar rápidamente entre dos ramas. Además, si has realizado cambios en un archivo y luego has cambiado de rama sin confirmar esos cambios, <strong>git checkout - </strong> te permite volver al estado anterior del archivo antes de que realizaras esos cambios.</li>
 </ul>
