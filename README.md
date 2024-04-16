@@ -1,4 +1,4 @@
-<h1 align="center"> Guia de comandos útiles en Git </h1>
+<h1 align="center"> Guía de comandos útiles en Git </h1>
 
 <a href="#"><img src="https://blog.desafiolatam.com/wp-content/uploads/2016/05/git-github-logo.jpg"></a>
 
