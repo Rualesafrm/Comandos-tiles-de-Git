@@ -194,11 +194,11 @@ Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epi
 </ul>
 <p align="justify">Para realizar la fusion de ramas debo seguir esta serie de pasos, pero siempre y cuando no tengamos conflictos entre las ramas a fusionar.</p>
 <ol>
-  <li><strong>Cambiar a la rama destino:</strong><br>
+  <li><strong>Cambiar a la rama destino: </strong>Este comando te llevará a la rama destino donde deseas integrar los cambios.<br>
   <code>git checkout rama_destino</code></li><br>
-  <li><strong>Fusiona la rama fuente:</strong><br>
+  <li><strong>Fusiona la rama fuente: </strong>Una vez que estás en la rama destino, utiliza el comando git merge para fusionar los cambios de la rama fuente en la rama destino.<br>
   <code>git merge rama_fuente</code></li><br>
-  <li><strong>Confirma la fusión:</strong><br>
+  <li><strong>Confirma la fusión: </strong>Después de que la fusión se complete correctamente, es importante confirmarla con un commit para registrar los cambios fusionados en el historial del repositorio.<br>
   <code>git commit -m "Merge rama_fuente en rama_destino"</code></li>
 </ol>
 <h2>Conflictos en nuestra fusión</h2>
