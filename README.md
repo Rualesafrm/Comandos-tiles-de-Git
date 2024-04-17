@@ -186,6 +186,33 @@ Tu repositorio en GitHub no es solo un lugar para almacenar código, ¡es el epi
   <li><strong>Finalmente, eliminar la rama de la nueva característica si ya no es necesaria: </strong><br><code>git branch -d nueva-caracteristica</code><br><br></li>
 </ol>
 
+<h2>Fusiones de ramas en Git</h2>
+<p align="justify">La fusión de ramas es un aspecto fundamental en Git ya que combinar los cambios realizados en una rama con los de otra, es útil cuando se trabaja en diferentes características o correcciones de errores en paralelo.</p>
+<h2>Comando git merge</h2>
+<ul>
+  <li><strong>git merge : </strong>Es la principal herramienta para fusionar ramas en Git. Permite combinar los cambios de una rama en otra.</li>
+</ul>
+<p align="justify">Para realizar la fusion de ramas debo seguir esta serie de pasos, pero siempre y cuando no tengamos conflictos entre las ramas a fusionar.</p>
+<ol>
+  <li><strong>Cambiar a la rama destino:</strong><br>
+  <code>git checkout rama_destino</code></li><br>
+  <li><strong>Fusiona la rama fuente:</strong><br>
+  <code>git merge rama_fuente</code></li><br>
+  <li><strong>Confirma la fusión:</strong><br>
+  <code>git commit -m "Merge rama_fuente en rama_destino"</code></li>
+</ol>
+<h2>Conflictos en nuestra fusión</h2>
+<p>En ocasiones, pueden surgir conflictos de fusión cuando hay cambios conflictivos en las mismas líneas de código en ambas ramas. Aquí te explicare cómo resolver estos conflictos:</p>
+<ol>
+  <li><strong>Identifica los archivos con conflictos: </strong><br>
+  <code>git status</code></li><br>
+  <li><strong>Abre los archivos conflictivos en un editor de texto y resuelve los conflictos manualmente.</strong><br></li><br>
+  <li><strong>Después de resolver los conflictos, agrega los archivos modificados al área de preparación: </strong><br>
+  <code>git add archivo</code></li><br>
+  <li><strong>Finaliza la fusión:</strong><br>
+  <code>git merge --continue</code></li>
+</ol>
+
 <h2 align="center">Sigamos con nuestro camino</h2>
 
 <p align="justify">Este viaje ha sido genial, contamos con conocimientos suficientes para manejar y gestionar nuestros repositorios en Git y GitHub, pero espera aún falta algo muy importante y son los "Pull request"</p>
